@@ -1,0 +1,49 @@
+/* src/App.css */
+body, html {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+  overflow: hidden;
+}
+
+.app-container {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+}
+
+.background-video {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.button-container {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+  z-index: 1; /* Place the button above the video */
+}
+
+.transparent-button {/* button size-color*/
+
+  padding: 400px 800px;
+  background-color: transparent;
+  color: rgb(255, 255, 255);
+  font-size: 70px;
+  cursor: pointer;
+  border: yellow;
+
+}
+
+.button-text {
+  margin-top: 195px;
+  color: rgb(255, 255, 255);
+  font-size: 52px;
+}
